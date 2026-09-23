@@ -1,7 +1,14 @@
+import sys
+from pathlib import Path
+
+# Add project root to sys.path for robust runner compatibility
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
 import pytest
 from src.ingestion.document_loader import Document
 from src.vectorstore.vector_manager import VectorStore, EmbeddingService
 from src.chain.rag_chain import RAGChain
+
 
 
 def test_vector_store_and_rag_chain():

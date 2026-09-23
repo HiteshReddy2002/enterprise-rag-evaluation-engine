@@ -1,6 +1,13 @@
+import sys
+from pathlib import Path
+
+# Add project root to sys.path for robust runner compatibility
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
 import pytest
 from src.chain.rag_chain import RAGResponse
 from src.evaluation.evaluator import RAGEvaluator
+
 
 
 def test_rag_triad_evaluation():
