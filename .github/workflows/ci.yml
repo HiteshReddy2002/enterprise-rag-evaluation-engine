@@ -27,5 +27,8 @@ jobs:
         pip install -r requirements.txt
 
     - name: Run Test Suite & Coverage
+      env:
+        PYTHONPATH: .
       run: |
         pytest --cov=src tests/
+
