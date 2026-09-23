@@ -29,7 +29,10 @@ jobs:
 
     - name: Run Test Suite & Coverage
       run: |
-        PYTHONPATH=. pytest --cov=src tests/
+        python -m unittest discover -s tests -p "test_*.py" -v
+        python tests/run_tests.py
+        python scripts/live_test.py
+
 
 
 
