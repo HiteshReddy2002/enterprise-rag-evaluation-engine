@@ -29,6 +29,7 @@ jobs:
 
     - name: Run Test Suite & Coverage
       run: |
-        python -m pytest --cov=src tests/
+        PYTHONPATH=. pytest --cov=src tests/
+
 
 

@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=61.0"]
+requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -22,12 +22,17 @@ dependencies = [
     "scikit-learn>=1.5.0",
 ]
 
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 python_files = ["test_*.py"]
 pythonpath = ["."]
 asyncio_mode = "auto"
 addopts = "--strict-markers -v"
+
 
 
 [tool.ruff]
