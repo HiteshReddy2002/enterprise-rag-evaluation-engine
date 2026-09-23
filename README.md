@@ -1,10 +1,11 @@
 # 🧠 Production-Grade LLM RAG System with Automated Evaluation Pipeline
 
-[![CI Pipeline](https://github.com/username/llm-rag-engine/actions/workflows/ci.yml/badge.svg)](https://github.com/username/llm-rag-engine/actions)
+[![CI Pipeline](https://github.com/HiteshReddy2002/enterprise-rag-evaluation-engine/actions/workflows/ci.yml/badge.svg)](https://github.com/HiteshReddy2002/enterprise-rag-evaluation-engine/actions)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.111.0-009688.svg?logo=fastapi)](https://fastapi.tiangolo.com)
 [![Code style: ruff](https://img.shields.io/badge/code%20style-ruff-000000.svg)](https://github.com/astral-sh/ruff)
+
 
 > An end-to-end, enterprise-ready **Retrieval-Augmented Generation (RAG)** architecture built with Python, dense vector embeddings, semantic chunking, FastAPI model serving, and an automated **RAG Triad (Faithfulness, Answer Relevance, Context Precision)** evaluation pipeline.
 
