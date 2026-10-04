@@ -2,7 +2,7 @@
 
 [![CI Pipeline](https://github.com/HiteshReddy2002/enterprise-rag-evaluation-engine/actions/workflows/ci.yml/badge.svg)](https://github.com/HiteshReddy2002/enterprise-rag-evaluation-engine/actions)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.111.0-009688.svg?logo=fastapi)](https://fastapi.tiangolo.com)
 [![Code style: ruff](https://img.shields.io/badge/code%20style-ruff-000000.svg)](https://github.com/astral-sh/ruff)
 
@@ -62,8 +62,8 @@ flowchart TD
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/llm-rag-engine.git
-cd llm-rag-engine
+git clone https://github.com/HiteshReddy2002/enterprise-rag-evaluation-engine.git
+cd enterprise-rag-evaluation-engine
 
 # Create & activate virtual environment
 python -m venv venv
@@ -71,6 +71,10 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 # Install dependencies
 pip install -r requirements.txt
+
+# Copy environment config and add your API keys
+cp .env.example .env
+# Edit .env: set LLM_PROVIDER and the matching API key (OPENAI_API_KEY or GEMINI_API_KEY)
 ```
 
 ### 2. Run the Interactive CLI Demo
@@ -126,4 +130,32 @@ docker-compose up --build
 ---
 
 ## 📜 License
-Distributed under the MIT License. See `LICENSE` for more information.
+Distributed under the [MIT License](LICENSE). Copyright (c) 2026 Hitesh Reddy Tippasani.
+
+---
+
+## 🛣️ Roadmap
+
+- [ ] RAGAS integration for automated triad scoring with ground-truth datasets
+- [ ] Hybrid retrieval: BM25 + dense vector fusion (Reciprocal Rank Fusion)
+- [ ] Streaming responses via Server-Sent Events (SSE)
+- [ ] Multi-vector-store support: Chroma, Qdrant, Pinecone
+- [ ] Hallucination rate tracking dashboard (Grafana)
+- [ ] Fine-tuned embedding model benchmarks (BGE, E5)
+- [ ] Multi-modal RAG: image + text documents
+
+---
+
+## 📝 Citation
+
+If you use this project in academic or professional work, please cite:
+
+```bibtex
+@software{tippasani2026rageval,
+  author    = {Tippasani, Hitesh Reddy},
+  title     = {Enterprise RAG Evaluation Engine: Production-Grade LLM Retrieval-Augmented Generation with Automated RAG Triad Evaluation},
+  year      = {2026},
+  url       = {https://github.com/HiteshReddy2002/enterprise-rag-evaluation-engine},
+  note      = {GitHub repository}
+}
+```
